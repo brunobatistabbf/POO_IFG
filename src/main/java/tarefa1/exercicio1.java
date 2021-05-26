@@ -1,4 +1,4 @@
-package exercicios;
+package tarefa1;
         
 import java.util.Scanner;
 
