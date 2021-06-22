@@ -5,8 +5,6 @@ public class Conta {
    private int agencia;
    private String nomeTitular;
    private String cpfTitular;
-   //String nomeBanco;
-   //int nroBanco;
    private double saldo;
 
    public Conta(int nroConta, int agencia, String nomeTitular, String cpfTitular){
@@ -89,14 +87,6 @@ public class Conta {
          return true;
       }
       return false;
-   }
-
-   public void extrato(){//Totalmente errado fazer isso!
-      System.out.println("<<<<< Dados da Conta >>>>>");
-      System.out.println("Nome titular: "+this.nomeTitular);
-      System.out.println("Número conta: "+this.nroConta);
-      System.out.println("Saldo R$"+this.saldo);
-      System.out.println("-------------------------------\n\n");
    }
 
 }
