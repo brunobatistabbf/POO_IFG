@@ -1,5 +1,7 @@
 package ContaClass;
 
+import POO_IFG.POO_IFG.banco.pessoa;
+
 public class Conta {
    private int nroConta;
    private int agencia;
