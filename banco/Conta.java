@@ -5,64 +5,44 @@ import POO_IFG.POO_IFG.banco.pessoa;
 public class Conta {
    private int nroConta;
    private int agencia;
-   private String nomeTitular;
-   private String cpfTitular;
    private double saldo;
+   private Pessoa titular;
 
-   public Conta(int nroConta, int agencia, String nomeTitular, String cpfTitular){
+   public Conta ( Pessoa titular, int nroConta, int agencia){
       this.nroConta = nroConta;
       this.agencia = agencia;
-      this.nomeTitular = nomeTitular;
-      this.cpfTitular = cpfTitular;
+      this.titular = titular;
       this.saldo = 0.0;
    }
 
-   public Conta(int nroConta, String nomeTitular, String cpfTitular){
-      this.nroConta = nroConta;
-      this.nomeTitular = nomeTitular;
-      this.cpfTitular = cpfTitular;
-
-      this.agencia = 123;
-      this.saldo = 0.0;
+   public void getDados() {
+      System.out.println(this.nroConta);
+      System.out.println(this.agencia);
+      System.out.println(this.saldo);
+      
    }
-
-   
-
-
-   public double getSaldo(){
-      return this.saldo;
-   }
-
    public int getNroConta() {
-      return this.nroConta;
+       return nroConta;
    }
 
    public void setNroConta(int nroConta) {
       this.nroConta = nroConta;
    }
 
-   public int getAgencia() {
-      return this.agencia;
-   }
-
    public void setAgencia(int agencia) {
       this.agencia = agencia;
    }
 
-   public String getNomeTitular() {
-      return this.nomeTitular;
+   public void setSaldo(double saldo) {
+      this.saldo = saldo;
    }
 
-   public void setNomeTitular(String nomeTitular) {
-      this.nomeTitular = nomeTitular;
+   public Pessoa getTitular() {
+      return this.titular;
    }
 
-   public String getCpfTitular() {
-      return this.cpfTitular;
-   }
-
-   public void setCpfTitular(String cpfTitular) {
-      this.cpfTitular = cpfTitular;
+   public void setTitular(Pessoa titular) {
+      this.titular = titular;
    }
 
 
@@ -90,5 +70,6 @@ public class Conta {
       }
       return false;
    }
+   
 
 }
