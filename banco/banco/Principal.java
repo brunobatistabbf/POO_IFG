@@ -1,4 +1,5 @@
-package ContaClass;
+package banco;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -94,8 +95,8 @@ public class Principal {
                 System.out.println("Entre com o valor da transferencia: ");
                 transferencia = sc.nextFloat();
                 for (Conta contaa : listaContas) {
-                  if(contaa.getNroConta == conta2){
-                    conta.tranferir(transferencia, contaa);
+                  if(contaa.getNroConta() == conta2){
+                    conta.transferir(transferencia, contaa);
                     System.out.println("Transferido com sucesso");
                   }
                 }

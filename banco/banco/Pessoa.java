@@ -1,16 +1,16 @@
-package POO_IFG.POO_IFG.banco;
+package banco;
 
 import java.io.ObjectInputStream.GetField;
-
 public class Pessoa {
     private String nome;
     private int cpf;
 
 
-    public titular(String nome, int cpf) {
+    public Pessoa(String nome, int cpf) {
         this.nome = nome;
         this.cpf = cpf;
     }
+
 
     public String getNome() {
         return this.nome;
@@ -28,12 +28,12 @@ public class Pessoa {
         this.cpf = cpf;
     }
 
-    public titular nome(String nome) {
+    public Pessoa nome(String nome) {
         setNome(nome);
         return this;
     }
 
-    public titular cpf(int cpf) {
+    public Pessoa cpf(int cpf) {
         setCpf(cpf);
         return this;
     }

@@ -1,6 +1,4 @@
-package ContaClass;
-
-import POO_IFG.POO_IFG.banco.pessoa;
+package banco;
 
 public class Conta {
    private int nroConta;
@@ -63,7 +61,7 @@ public class Conta {
       return false;
    }
 
-   public boolean transferir(double valor, Conta conta){
+   public boolean transferir(float valor, Conta conta){
       if(this.sacar(valor)){
          conta.depositar(valor);
          return true;
